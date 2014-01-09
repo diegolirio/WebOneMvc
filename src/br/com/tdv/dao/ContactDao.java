@@ -26,5 +26,30 @@ public class ContactDao {
 			}
 		}
 	}
+	
+	public Contact getContact(int id) {
+		Contact contact = null;
+		for (Contact c : list) {
+			if(c.getId() == id) {
+				contact = c;
+				break;
+			}
+		}
+		return contact;
+	}
+	
+	public void update(Contact contact) {
+		for (Contact c : list) {
+			if(c.getId() == contact.getId()) {				
+				int index = list.indexOf(c);
+				list.get(index).setNome(contact.getNome());
+				list.get(index).setEmail(contact.getEmail());
+				list.get(index).setDataNascimento(contact.getDataNascimento());
+				list.get(index).setTelefone(contact.getTelefone());
+				list.get(index).setEndereco(contact.getEndereco());				
+			}
+			break;
+		}
+	}
 
 }
