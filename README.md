@@ -12,7 +12,7 @@ Gerando o .war
 
 Dentro da minha pasta WebContent ou Webapp precisa estar a arquiteura da seguinte forma:
 
-- WebContent/
+        WebContent/
             |-------------- *.html
             |-------------- WEB-INF/
                                |---------------- web.xml
