@@ -10,7 +10,7 @@ Servlet + JSP
 Deploy de AppWeb….
 Gerando o .war
 
-Dentro da minha pasta WebContent ou Webapp precisa estar a arquiteura da seguinte forma:
+Dentro da minha pasta WebContent ou Webapp a arquiteura precisa estar da seguinte forma:
 
         WebContent/
             |-------------- *.html
