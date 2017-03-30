@@ -23,5 +23,13 @@ Dentro da minha pasta WebContent ou Webapp a arquiteura precisa estar da seguint
 
 Estando da seguinte forma basta zipar os arquivos *.html e WEB-INF (e se tiver mais algum).
 
-Agora altere de WebContent.zip para nome_da_minha_app.war e jogar no meu servidor de Aplicação!
+Agora altere de WebContent.zip para nome_da_minha_app.war e jogar no meu servidor de Aplicação!   
 
+Script para jenkins
+```shell
+cd build/
+cp -R classes/ ../WebContent/WEB-INF/
+cd ../WebContent/
+zip -r WebOneMvc.war * && mv WebOneMvc.war /etc/apache-tomcat-8.5.12/webapps/
+cd /etc/apache-tomcat-8.5.12/webapps/
+```
